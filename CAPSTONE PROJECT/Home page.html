@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Login in</title>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="c1.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "navbar">
+                <a href="Home page.html"><img src = "logo.png" class = "logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="wefixit.html">𝙷𝚘𝚖𝚎<a></li>
+                        <li><a href="Home page.html">𝙰𝚋𝚘𝚞𝚝 <a></li>
+                        <li><a href="Register.html">𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛<a></li>
+                        <li><a href="reg.html">𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝚞𝚜<a></li> 
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1>WHAT WE DO ACTUALLY ?</h1>
+                    <p>𝚃𝚒𝚛𝚎𝚍 𝚘𝚏 𝚠𝚊𝚒𝚝𝚒𝚗𝚐 𝚝𝚘 𝚛𝚎𝚙𝚊𝚒𝚛 𝚢𝚘𝚞𝚛 𝚜𝚖𝚊𝚛𝚝𝚙𝚑𝚘𝚗𝚎 ? <br>𝙰𝚏𝚛𝚊𝚒𝚍 𝚘𝚏 𝙳𝚊𝚝𝚊 𝚝𝚑𝚎𝚏𝚝 𝚠𝚑𝚒𝚕𝚎 𝚛𝚎𝚙𝚊𝚒𝚛𝚒𝚗𝚐 ? <br> 𝚆𝚎𝚕𝚕 𝙳𝚘𝚗'𝚝 𝚋𝚎 :) <br><br>𝚆𝚎 𝚋𝚊𝚜𝚒𝚌𝚊𝚕𝚕𝚢 𝚏𝚒𝚡 𝚂𝚖𝚊𝚛𝚝𝚙𝚑𝚘𝚗𝚎𝚜, 𝙴𝚒𝚝𝚑𝚎𝚛 𝚋𝚎 𝚒𝚝 𝚊 𝙷𝚊𝚛𝚍𝚠𝚊𝚛𝚎
+                        𝚍𝚊𝚖𝚊𝚐𝚎 𝚘𝚛 𝚊 𝚂𝚘𝚏𝚝𝚠𝚊𝚛𝚎 𝚋𝚛𝚎𝚊𝚔𝚍𝚘𝚠𝚗 <br>𝚆𝚎 𝚑𝚊𝚗𝚍𝚕𝚎 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐!! &nbsp;𝚆𝚊𝚗𝚝 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚖𝚘𝚛𝚎?</p>
+                    <button type="button">Explore</button>
+                </div>
+
+                <div class="col">
+                    <div class="card card1">
+                        <h3>General Service</h3><br><br><br><br><br><br>
+                        <p>Performance, Bugs, Memory clean up</p>
+                    </div>
+                    <div class="card card2">
+                        <h3>Hardware Change</h3><br><br><br><br><br><br>
+                        <p>Touch screen repair, Battery Defects</p>
+                    </div>
+                    <div class="card card3">
+                        <h3>Software Check</h3><br><br><br><br><br><br>
+                        <p>Android, IOS, Other software change</p>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div class="imgbox">
+                    <img src="pics/pic1.jpg">
+                </div>
+                <div class="contentbox">
+                    <div class="formbox">
+                        <h2>Sign in</h2>
+                        <form method="post" action="wefixit.html">
+                            <div class="inputbox">
+                                <span>Username</span>                               
+                                <input type="text" name="" required>
+                            </div>
+                            <div class="inputbox">
+                                <span>Password</span>
+                                <input type="password" name="" required>
+                            </div>
+                            <div class="inputbox">
+                                <span>Enter Captcha</span>
+                                <input type="text" name="" id="captcha">
+                            </div>
+                            <div class="inputbox">
+                                <span id="captchaSpan"></span>
+                            </div>
+                            <div class="rem">
+                                <label><input type="checkbox" name="">Remember me</label>
+                            </div>
+                            <div class="inputbox">
+                                <div class="form-input">
+                                    <button id="login-btn">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                        <h3>Login with social media</h3>
+                        <ul class="sci">
+                            <li><img src="google.png"></li>
+                            <li><img src="meta.png"></li>
+                            <li><img src="insta.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div> 
+        <script>
+            var captcha = Math.ceil(Math.random() * 10000);
+            document.getElementById("captchaSpan").innerHTML = captcha;
+            document.getElementById("login-btn").addEventListener("click", function(){
+                var userCaptcha = document.getElementById("captcha").value;
+                if(userCaptcha == captcha){
+                    alert("Login Successful");
+                }
+                else{
+                    alert("Login Failed");
+                }
+            });
+        </script>
+    </body>
+</html>

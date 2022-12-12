@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Login in</title>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="c1.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "navbar">
+                <a href="Home page.html"><img src = "pics/logo.png" class = "logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="wefixit.html">𝙷𝚘𝚖𝚎<a></li>
+                        <li><a href="Home page.html">𝙰𝚋𝚘𝚞𝚝 <a></li>
+                        <li><a href="Register.html">𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛<a></li>
+                        <li><a href="reg.html">𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝚞𝚜<a></li> 
+                    </ul>
+                </nav>
+                <img src="pics/menu.png" class="menu">
+            </div>
+            <br><br>
+            <h2 align="center">Brand New Mobile Devices</h2>
+            <div class="lst">
+                <div class="crd crd1">
+                    <h2>Apple Iphone</h2>
+                </div>
+                <div class="crd crd2">
+                    <h2>Samsung Galaxy</h2>
+                </div>
+                <div class="crd crd3">
+                    <h2>One Plus</h2>
+                </div>
+                <div class="crd crd1">
+                    <h2>Google Pixel</h2>
+                </div>
+            </div>
+            <div class="lst">
+                <div class="crd crd2">
+                    <h2>Nokia</h2>
+                </div>
+                <div class="crd crd3">
+                    <h2>Motorola</h2>
+                </div>
+                <div class="crd crd1">
+                    <h2>Asus</h2>
+                </div>
+                <div class="crd crd2">
+                    <h2>Oppo</h2>
+                </div>
+            </div>
+            <!--listing mobile in card style using css-->
+            <br><br>
+            <h2 align="center">Brand New Laptop Devices</h2>
+            <div class="lst">
+                <div class="crd crd4">
+                    <h2>Apple Macbook</h2>
+                </div>
+                <div class="crd crd4">
+                    <h2>Asus</h2>
+                </div>
+                <div class="crd crd4">
+                    <h2>HP</h2>
+                </div>
+                <div class="crd crd4">
+                    <h2>Dell</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

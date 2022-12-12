@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> WeFixIt | Registration Form </title>
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href="cs2.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+
+  <style type="text/css">
+	label{
+		width: 100px;
+		display:inline-table;
+	}
+	</style>
+</head>
+
+<body style="background: linear-gradient(135deg, #dd32ad, #16d8e6)">
+	<div class = "container">
+		<div class = "navbar">
+			<a href="Home page.html"><img src = "logo.png" class = "logo"></a>
+			<nav>
+				<ul>
+					<li><a href="wefixit.html">𝙷𝚘𝚖𝚎<a></li>
+					<li><a href="Home page.html">𝙰𝚋𝚘𝚞𝚝 <a></li>
+					<li><a href="Register.html">𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛<a></li>
+					<li><a href="reg.html">𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝚞𝚜<a></li> 
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu">
+		</div>
+		<h1 align="center">Register Now!</h1><br><br>
+		<table  align="center" style="background:radial-gradient(rgb(255, 234, 0), rgb(248, 130, 20)); padding:25px; margin: auto;">
+		<form align="left" action = "login.php" method = "post">
+	  
+		  <tr>
+		  <td>
+	  
+		  <label for = "name"> FULL NAME </label>
+		  <input type = "text" name = "name" placeholder="Enter name" minlength = "5" id = "name" required />
+		  <br><br>
+	  
+		  <label for = "phone"> PHONE : </label>
+		  <input type = "text"  name = "Phone" placeholder="Enter phone number" id = "phone" pattern = [0-9]{10} />
+		  <br><br>
+	  
+		  <label for = "E-Mail"> E-MAIL ID : </label>
+		  <input type = "text" name = "E-Mail" placeholder="Enter mail id" id = "E-Mail" />
+		  <br><br>
+	  
+		  <label for = "u_name"> USERNAME : </label>&nbsp;
+		  <input type = "text" name = "name" placeholder="Enter username" minlength = "5" id = "u_name" required />
+		  <br><br>
+	  
+		  <label for = "password"> PASSWORD : </label>
+		  <input type = "password" name = "Password" placeholder="Enter password" id = "password" required />
+		  <br><br>
+	  
+		  <label for = "c_password"> CONFIRM PASSWORD : </label>
+		  <input type = "password" name = "Password" placeholder="Re-enter password " id = "c_password" required />
+		  <br><br>
+	  
+	  </td>
+		  
+	  <tr>
+	  <td align = "center" colspan="2">
+		  <input width="100%" type = "submit" value = "Submit" name = "submit">&nbsp;&nbsp;&nbsp;
+		  <input type = "reset" value = "Reset" name = "reset">&nbsp;&nbsp;&nbsp;
+	  </td>
+	  </tr>
+		</form>
+		</table>
+	</div>
+
+</body>
+</html>

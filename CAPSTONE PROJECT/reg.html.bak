@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <title>Home | Login in</title>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="c1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+        h1{
+            text-align: center;
+            color: #000;
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        p, label{
+            color: #000;
+            font-size: 20px;
+            font-family: 'Barlow', sans-serif;
+        }
+    </style>
+</head>
+<body>
+  <div class = "container">
+    <div class = "navbar">
+        <a href="Home page.html"><img src = "pics/logo.png" class = "logo"></a>
+        <nav>
+          <ul>
+            <li><a href="wefixit.html">𝙷𝚘𝚖𝚎<a></li>
+            <li><a href="Home page.html">𝙰𝚋𝚘𝚞𝚝 <a></li>
+            <li><a href="Register.html">𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛<a></li>
+            <li><a href="reg.html">𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝚞𝚜<a></li> 
+        </ul>
+        </nav>
+        <img src="pics/menu.png" class="menu">
+    </div>
+    <div class="frm">
+      <h1>Mobile Service- Reservation</h1><br><br><br>
+      <form>
+        <label>Name : </label>&nbsp;&nbsp;
+        <select>
+          <option>Mr</option>
+          <option>Ms</option>
+          <option>Mrs</option>
+          <option>Miss</option>
+          <option>Dr</option>
+        </select>&nbsp;&nbsp;
+        <input class="txt" placeholder="First Name" type="text" required/>&nbsp;&nbsp;
+        <input class="txt" placeholder="Last Name" type="text"/><br><br>
+        <label>Contact : </label>&nbsp;&nbsp;
+        <input class="txt" type="text" name="Phone" placeholder="Phone: (xxx) - xxx xxxx" id="phone" pattern="[0-9]{10}" required/>&nbsp;&nbsp;
+        <input class="txt" type="text" name="E-Mail" placeholder="abc@gmail.com" id="e-mail" required/><br><br>
+        <label>Age of the Device : </label>&nbsp;&nbsp;
+        <input class="txtsrt" placeholder="Years" type="number" />&nbsp;&nbsp;
+        <input class="txtsrt" placeholder="Months" type="number" />&nbsp;&nbsp;
+        <input class="txtsrt" placeholder="Days" type="number" /><br><br>
+        <label>Brand : </label>&nbsp;&nbsp;
+        <select required>
+          <option default selected hidden>none</option>
+          <option>Apple</option>
+          <option>Samsung</option>
+          <option>Oppo</option>
+          <option>Vivo</option>
+          <option>Moto</option>
+          <option>Redmi</option>
+          <option>RealMe</option>
+          <option>One Plus</option>
+          <option>Poco</option>
+          <option>Asus</option>
+          <option>Jio</option>
+          <option>Xiomi</option>
+          <option>Sony</option>
+          <option>Nokia</option>
+          <option>LG</option>
+          <option>Others</option>
+        </select><br><br>
+        <label>Model-Number : </label>&nbsp;&nbsp;
+        <input type="text" class="txt" required><br><br>
+        <label>Serial-Number : </label>&nbsp;&nbsp;
+        <input type="text" class="txt" required><br><br>
+        <label>Warranty : </label>&nbsp;&nbsp;
+        <input type="checkbox" class="slider round" value="w" /><br><br>
+        <label>Required Service : </label>&nbsp;&nbsp;
+        <select required>
+          <option default selected hidden>none</option>
+          <option value="hydro">General Hardware</option>
+          <option value="water">Display</option>
+          <option value="water">Software</option>
+          <option value="sewer">Battery Change</option>
+          <option value="sewer">Rooting</option>
+          <option value="sewer">Others</option>
+        </select><br><br><br>
+        <label>Detailed Discription about the Fault : </label>&nbsp;&nbsp;
+        <input type="file"required><br><br><br>
+        <table>
+          <tr>
+            <td> <label>Additional Comments : </label>&nbsp;&nbsp; </td>
+            <td> <textarea placeholder="Additional comments" rows="3"></textarea></td>
+          </tr>
+        </table><br><br>
+        <label>E-mail me my responses : </label>&nbsp;&nbsp;
+        <input type="checkbox" value="chk_hydro" /><br><br>
+        <input type="submit">&nbsp;&nbsp;
+        <input type="reset">
+      </form>
+    </div>
+  </div>
+</body>
+
